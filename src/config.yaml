@@ -10,8 +10,8 @@ site:
 metadata:
   title:
     default: 'KFM Company'
-    template: '%s — Khosh Fkra Media'
-  description: 'The official website of Khosh Fkra Media (KFM).'
+    template: '%s — KFM Company'
+  description: 'The official website of Khosh Fkra Media.'
   robots:
     index: true
     follow: true
