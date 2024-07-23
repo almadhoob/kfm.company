@@ -4,72 +4,68 @@ export const headerData = {
   links: [
     {
       text: 'About',
-      href: getPermalink('/about')
+      href: getPermalink('/about'),
     },
     {
       text: 'Services',
-      href: getPermalink('/services')
+      href: getPermalink('/services'),
     },
     {
       text: 'Pricing',
-      href: getPermalink('/pricing')
+      href: getPermalink('/pricing'),
     },
     {
       text: 'Contact',
-      href: getPermalink('/contact')
+      href: getPermalink('/contact'),
     },
     {
       text: 'Insights',
-      href: getBlogPermalink()
-    }
+      href: getBlogPermalink(),
+    },
   ],
-  actions: [{ text: 'Get App', href: getPermalink('/app')}],
+  actions: [{ text: 'Get App', href: getPermalink('/app') }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
-      links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
-      ],
-    },
-    {
       title: 'Platform',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Apple Store', href: '#' },
+        { text: 'Google Store', href: '#' },
+        { text: 'Admin Dashboard', href: '#' },
+        { text: 'Feature Request', href: '#' },
+        { text: 'Problem Report', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: 'Services',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Advertisement', href: '#' },
+        { text: 'Market Research', href: '#' },
+        { text: 'Graphic Design', href: '#' },
+        { text: 'Video Creation', href: '#' },
+        { text: 'Podcast Making', href: '#' },
+      ],
+    },
+    {
+      title: 'Channels',
+      links: [
+        { text: 'KFM Bahrain', href: '#' },
+        { text: 'KFM Riyadh', href: '#' },
+        { text: 'KFM Qatar', href: '#' },
+        { text: 'KFM Interviews', href: '#' },
+        { text: 'KFM Podcast', href: '#' },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Get To Know', href: '#' },
+        { text: 'Get Connected', href: '#' },
+        { text: 'Find Careers', href: '#' },
+        { text: 'Have Insights', href: '#' },
+        { text: 'Join Newsletter', href: '#' },
       ],
     },
   ],
@@ -82,7 +78,7 @@ export const footerData = {
     { ariaLabel: 'TikTok', icon: 'tabler:brand-tiktok', href: '#' },
     { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: '#' },
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') }
+    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
   ],
   footNote: `
     Copyright © 2024 <a class="text-blue-600 underline dark:text-muted" href="https://amstalks.com/" target="_blank">AMS</a>. All Rights Reserved.
