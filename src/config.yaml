@@ -17,10 +17,6 @@ metadata:
     follow: true
   openGraph:
     site_name: 'KFM Company'
-    images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
     type: website
   twitter:
     handle: '@kfm_company'
@@ -38,13 +34,13 @@ apps:
 
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/insights/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'insights' # Blog main path, you can change this to "articles" (/articles)
       robots:
         index: true
 
