@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-07-08T00:00:00Z
-author: KFM Company
+author: KFM Staff
 title: 'AI in Marketing: How to Leverage Machine Learning for Better Campaigns'
 excerpt: Learn how artificial intelligence and machine learning can enhance your marketing campaigns and drive superior results.
 image: https://cdn.pixabay.com/photo/2021/03/08/18/41/machine-learning-6079971_1280.png

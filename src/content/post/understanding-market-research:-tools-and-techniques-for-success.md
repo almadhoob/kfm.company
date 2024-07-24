@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-06-29T00:00:00Z
-author: KFM Company
+author: KFM Staff
 title: 'Understanding Market Research: Tools and Techniques for Success'
 excerpt: Discover essential market research tools and techniques that can help you make informed business decisions and stay ahead of the competition.
 image: https://cdn.pixabay.com/photo/2021/11/29/18/39/reading-6833367_1280.png

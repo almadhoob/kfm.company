@@ -65,7 +65,7 @@ export const footerData = {
         { text: 'Get Connected', href: '#' },
         { text: 'Find Careers', href: '#' },
         { text: 'Have Insights', href: '#' },
-        { text: 'Join Newsletter', href: '#' },
+        { text: 'Join Newsgroup', href: '#' },
       ],
     },
   ],

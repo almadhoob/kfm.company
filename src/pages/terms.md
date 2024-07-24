@@ -3,7 +3,7 @@ title: 'Terms and Conditions'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Last updated_: July 01, 2024
+_Last updated: July 01, 2024_
 
 ## 1. Introduction
 

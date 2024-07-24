@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-07-01T00:00:00Z
-author: KFM Company
+author: KFM Staff
 title: Harnessing Data Analytics for Smarter Marketing Decisions
 excerpt: Discover how leveraging data analytics can transform your marketing strategy and lead to more informed decision-making.
 image: https://cdn.pixabay.com/photo/2023/05/01/17/34/data-7963502_1280.png

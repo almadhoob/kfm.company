@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-07-22T00:00:00Z
-author: KFM Company
+author: KFM Staff
 title: Personalization Strategies That Boost Customer Engagement
 excerpt: Learn how to implement effective personalization strategies to enhance customer engagement and drive business growth.
 image: https://cdn.pixabay.com/photo/2020/12/16/15/19/mobile-phone-5836879_1280.png

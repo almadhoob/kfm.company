@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-07-05T00:00:00Z
-author: KFM Company
+author: KFM Staff
 title: 'Creating Compelling Content: Tips for Engaging Your Audience'
 excerpt: Learn how to create compelling content that captures attention, engages your audience, and drives business growth.
 image: https://cdn.pixabay.com/photo/2022/03/27/09/12/writing-7094468_1280.png

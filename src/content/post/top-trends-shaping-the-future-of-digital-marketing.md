@@ -1,6 +1,6 @@
 ---
 publishDate: 2024-07-15T00:00:00Z
-author: KFM Company
+author: KFM Staff
 title: Top Trends Shaping the Future of Digital Marketing in 2024
 excerpt: Discover the key trends that are set to revolutionize digital marketing in 2024 and how your business can stay ahead of the curve.
 image: https://cdn.pixabay.com/photo/2022/11/09/03/03/email-marketing-7579810_1280.png
