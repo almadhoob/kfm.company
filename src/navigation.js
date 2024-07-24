@@ -31,8 +31,8 @@ export const footerData = {
     {
       title: 'Platform',
       links: [
-        { text: 'Apple Store', href: '#' },
-        { text: 'Google Store', href: '#' },
+        { text: 'Apple App Store', href: '#' },
+        { text: 'Google App Store', href: '#' },
         { text: 'Admin Dashboard', href: '#' },
         { text: 'Feature Request', href: '#' },
         { text: 'Problem Report', href: '#' },

@@ -13,10 +13,10 @@ import Button from '~/components/ui/Button.astro';
 import Image from '~/components/common/Image.astro';
 
 const appStoreImg = '~/assets/images/apple-store.png';
-const appStoreDownloadLink = 'https://github.com/onwidget/astrowind';
+const appStoreDownloadLink = '#';
 
 const googlePlayImg = '~/assets/images/google-store.png';
-const googlePlayDownloadLink = 'https://github.com/onwidget/astrowind';
+const googlePlayDownloadLink = '#';
 
 const metadata = {
   title: 'Mobile App',
@@ -27,23 +27,23 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Mobile App Web Demo"
+    tagline="AI-Powered Marketing Assistant"
     image={{
-      src: 'https://images.unsplash.com/photo-1535303311164-664fc9ec6532?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'AstroWind Hero Image',
+      src: 'https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=987&q=80',
+      alt: 'KFM Marketing Genius Hero Image',
     }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">AstroWind App</span>: <br /> professional websites <span
-        class="hidden xl:inline">made easy</span
+      <span class="text-accent dark:text-white highlight">KFM Marketing Genius</span>: <br /> innovative marketing <span
+        class="hidden xl:inline">made effortless</span
       >
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Unlock boundless creativity at your fingertips: your gateway to innovative design.
+        Transform your marketing strategies with cutting-edge AI technology and take your business to new heights.
       </span>
-      Download now and embark on a journey to elevate your projects like never before.
+      Sign up now and start crafting effective marketing plans with ease.
     </Fragment>
 
     <div slot="actions" class="flex max-w-sm gap-4">
@@ -61,37 +61,34 @@ const metadata = {
 
   <Features3
     id="features"
-    title="How to use our app?"
-    subtitle="Tired of spending hours crafting documents from scratch? Our app offers an innovative solution. With a wide array of professionally designed templates, you can now create stunning documents in minutes. Explore our templates now and experience the difference."
+    title="How does KFM Marketing Genius work?"
+    subtitle="Say goodbye to traditional marketing hassles and embrace a smarter approach. With KFM Marketing Genius, you can easily generate marketing plans, create compelling content, and track your campaign performance effortlessly."
     tagline="Step-by-step guide"
     columns={2}
     items={[
       {
         title: 'Download and install the app',
-        description: `Begin your journey by downloading our user-friendly app from your device's app store or our official website.`,
+        description: `Start your journey by downloading KFM Marketing Genius from your device's app store or our official website.`,
         icon: 'tabler:square-number-1',
       },
       {
-        title: 'Sign up',
+        title: 'Create an account',
         description:
-          'Create your account by providing the necessary information, enabling you to access our full range of features.',
+          'Set up your account to access a full suite of AI-driven marketing tools and features tailored to your business needs.',
         icon: 'tabler:square-number-2',
       },
       {
-        title: 'Browse templates',
-        description: 'Explore our diverse collection of website templates, categorized for easy navigation.',
+        title: 'Generate marketing plans',
+        description:
+          'Utilize AI technology to craft comprehensive marketing plans based on your business goals and target audience.',
         icon: 'tabler:square-number-3',
       },
       {
-        title: 'Preview and select a template',
-        description: `Visualize the potential of each template through previews, then choose the one that aligns best with your project's needs.`,
+        title: 'Monitor and optimize campaigns',
+        description: `Track your campaign performance with real-time analytics and optimize strategies using AI-driven insights.`,
         icon: 'tabler:square-number-4',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1521517407911-565264e7d82d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80',
-      alt: 'Colorful Image',
-    }}
   />
 
   <!-- Content Widget **************** -->
@@ -100,36 +97,36 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'User-friendly interface',
+        title: 'AI-Driven Insights',
         description:
-          'An intuitive and easy-to-navigate interface that allows users to quickly browse and find the templates they need.',
-        icon: 'tabler:wand',
+          'Leverage advanced AI to gain valuable insights and recommendations for your marketing strategies and campaigns.',
+        icon: 'tabler:brain',
       },
       {
-        title: 'Personalization options',
+        title: 'Creative Content Assistance',
         description:
-          'Include basic customization tools that let users modify text, colors, images, and other elements within the templates.',
-        icon: 'tabler:settings',
+          'Receive personalized content ideas and drafts for your marketing materials, including social media posts and email campaigns.',
+        icon: 'tabler:bulb',
       },
       {
-        title: 'Ready-to-use components',
+        title: 'Comprehensive Campaign Tracking',
         description:
-          'Enhance your designs with ready-to-use elements like graphics, icons, and layouts, saving you time and boosting visual appeal.',
-        icon: 'tabler:template',
+          'Track the performance of your marketing campaigns with detailed analytics and reporting features.',
+        icon: 'tabler:chart-line',
       },
       {
-        title: 'Preview Mode',
-        description: 'Provide a preview of each template, allowing users to see how it looks before making a purchase.',
-        icon: 'tabler:carousel-horizontal',
+        title: 'Seamless Integration',
+        description: 'Integrate with various marketing platforms to streamline your workflow and enhance efficiency.',
+        icon: 'tabler:plug',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1576153192621-7a3be10b356e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1537458451507-adfc73de97ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1674&q=80',
+      alt: 'Feature Highlights Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Key Features</h3>
     </Fragment>
   </Content>
 
@@ -139,45 +136,47 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Offline Access',
-        description: 'Offer the option for users to download purchased templates for offline use.',
-        icon: 'tabler:wifi-off',
-      },
-      {
-        title: 'Secure Cloud Storage',
+        title: 'Intelligent Recommendations',
         description:
-          'Provide cloud storage for purchased templates, ensuring users can access and back up their templates from anywhere securely.',
-        icon: 'tabler:file-download',
+          'Get AI-powered recommendations for optimizing your marketing strategies and achieving better results.',
+        icon: 'tabler:checklist',
       },
       {
-        title: 'Regular Updates',
-        description: 'Continuously add new templates and features to keep the app fresh and engaging for users.',
-        icon: 'tabler:refresh',
+        title: 'Real-Time Analytics',
+        description:
+          'Access real-time data and analytics to make informed decisions and adjust your marketing efforts promptly.',
+        icon: 'tabler:report-analytics',
       },
       {
-        title: 'Wishlist',
-        description: `Allow users to create a wishlist of templates they're interested in, making it easier for them to revisit and potentially purchase later.`,
-        icon: 'tabler:heart',
+        title: 'Customizable Templates',
+        description:
+          'Utilize customizable templates for various marketing needs, from social media posts to email newsletters.',
+        icon: 'tabler:template',
+      },
+      {
+        title: '24/7 Support',
+        description: 'Access around-the-clock support for any questions or issues you may encounter with the app.',
+        icon: 'tabler:headset',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Vintage Image',
+      src: 'https://images.unsplash.com/photo-1537458769898-716468c1b373?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070&q=80',
+      alt: 'Additional Features Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Other features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Additional Features</h3>
     </Fragment>
   </Content>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics of our app"
+    title="Our App in Numbers"
     stats={[
-      { amount: '20K', icon: 'tabler:download' },
-      { amount: '18.5K', icon: 'tabler:users' },
-      { amount: '4.7', icon: 'tabler:user-star' },
+      { amount: '160K+', icon: 'tabler:download' },
+      { amount: '45K+', icon: 'tabler:users' },
+      { amount: '4.9', icon: 'tabler:star' },
     ]}
   />
 
@@ -187,18 +186,18 @@ const metadata = {
     title="What our users say?"
     testimonials={[
       {
-        testimonial: `It's made exploring and downloading website templates a breeze. The interface is intuitive, and I had no trouble finding the perfect template for my project. It's an app that truly empowers users.`,
+        testimonial: `KFM Marketing Genius has completely transformed the way we approach marketing. The AI-driven insights have helped us create more effective campaigns.`,
         name: 'Cary Kennedy',
-        job: 'Film director',
+        job: 'Marketing Director',
         image: {
           src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
           alt: 'Cary Kennedy Image',
         },
       },
       {
-        testimonial: `The app's seamless download process and intuitive layout have made selecting templates an enjoyable experience. Being able to preview and experiment with different designs before committing has saved me time and ensured I get the perfect look for my website.`,
+        testimonial: `The app's seamless integration and real-time analytics have been game-changers for our team. It's incredibly intuitive and has saved us so much time.`,
         name: 'Josh Wilkinson',
-        job: 'Product Manager',
+        job: 'Digital Marketer',
         image: {
           src: 'https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
           alt: 'Josh Wilkinson Image',
@@ -206,51 +205,45 @@ const metadata = {
       },
       {
         testimonial:
-          'I was able to download and use a professional website template within minutes. The step-by-step process and user-friendly interface made it easy for me to create a website that looks as if it was designed by a pro.',
+          'KFM Marketing Genius is a must-have tool for any marketing professional. The intelligent recommendations have greatly enhanced our marketing strategies.',
         name: 'Sidney Hansen',
-        job: 'Decorator',
+        job: 'Business Owner',
         image: {
           src: 'https://images.unsplash.com/photo-1512361436605-a484bdb34b5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
           alt: 'Sidney Hansen Image',
         },
       },
     ]}
-    callToAction={{
-      target: '_blank',
-      text: 'Read more testimonials',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Still have some doubts?"
+    title="Frequently Asked Questions"
     items={[
       {
         title: 'What does this app do?',
         description:
-          'This app provides a platform for you to easily browse, purchase, download, and use a wide range of website templates for your projects.',
+          'KFM Marketing Genius is an AI-powered marketing assistant that helps you generate marketing plans, create content, and track campaign performance efficiently.',
       },
       {
-        title: 'How can this app solve my problem?',
+        title: 'How can this app benefit my business?',
         description:
-          'This app streamlines the process of finding and implementing professional website designs, saving you time and effort in creating visually appealing and functional websites.',
+          'This app provides advanced AI-driven tools for crafting effective marketing strategies, saving time, and optimizing campaign results.',
       },
       {
-        title: 'Is it available for my device?',
-        description: `Our app is designed for compatibility across various devices and platforms, ensuring accessibility whether you're using a smartphone, tablet, or computer.`,
+        title: 'Is it available on all devices?',
+        description: `Yes, the app is compatible with various devices, including smartphones, tablets, and computers, ensuring accessibility across platforms.`,
       },
       {
-        title: 'What makes this app different from others?',
+        title: 'What makes KFM Marketing Genius unique?',
         description:
-          'Our app stands out for its user-friendly interface, extensive template collection, and seamless integration of the purchasing and downloading process, making it highly efficient.',
+          'The app stands out due to its intelligent recommendations, real-time analytics, and seamless integration with other marketing platforms.',
       },
       {
         title: 'Are there any costs involved?',
         description:
-          'While the app itself may be free to download, there may be costs associated with purchasing specific templates based on your preferences and project requirements.',
+          'While the app itself may be free to download, there may be costs associated with premium features or subscription plans based on your needs.',
       },
     ]}
   />
@@ -259,8 +252,8 @@ const metadata = {
 
   <CallToAction
     id="download"
-    title="Download our app now!"
-    subtitle="Access a variety of stunning templates, simplify your creative process, and elevate your online presence."
+    title="Get Started with KFM Marketing Genius!"
+    subtitle="Harness the power of AI to elevate your efforts and achieve outstanding results."
   >
     <div slot="actions" class="flex max-w-sm gap-4">
       <Button variant="link" href={appStoreDownloadLink}>

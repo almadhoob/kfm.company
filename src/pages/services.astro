@@ -1,5 +1,4 @@
 ---
-import CallToAction from '~/components/widgets/CallToAction.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
@@ -16,73 +15,74 @@ const metadata = {
 
   <Hero
     tagline="Our Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+    title="Boost Your Brand with Us"
+    subtitle="Explore our wide range of marketing services designed to elevate your brand and drive business growth. From strategic planning to creative execution, we provide the solutions you need to succeed."
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      src: 'https://cdn.pixabay.com/photo/2019/03/26/04/30/influencer-4081842_1280.jpg',
+      alt: 'Marketing Services Image',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
+    title="Our Core Services"
+    subtitle="Discover the range of services we offer to help your brand thrive."
     columns={3}
     items={[
       {
-        title: 'Educational',
+        title: 'Digital Marketing',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
+          'Harness the power of digital channels to reach your target audience. Our digital marketing services include SEO, SEM, social media marketing, and more.',
+        icon: 'tabler:world',
       },
       {
-        title: 'Interior Design',
+        title: 'Content Creation',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+          'Engage your audience with compelling content. We provide content strategy, creation, and distribution services to tell your brand story effectively.',
+        icon: 'tabler:edit',
       },
       {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
+        title: 'Brand Strategy',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
+          'Develop a strong brand identity that resonates with your audience. Our brand strategy services help you define and communicate your brand values.',
+        icon: 'tabler:image-in-picture',
       },
       {
-        title: 'Blog',
+        title: 'Public Relations',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
+          'Build and maintain a positive public image with our PR services. We handle media relations, crisis management, and event planning to enhance your reputation.',
+        icon: 'tabler:speakerphone',
       },
       {
-        title: 'Business',
+        title: 'Market Research',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
+          'Gain insights into your market and competitors. Our market research services provide the data and analysis you need to make informed business decisions.',
+        icon: 'tabler:chart-line',
       },
       {
-        title: 'Branding',
+        title: 'Advertising',
         description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
+          'Create impactful advertising campaigns that drive results. We offer media planning, buying, and creative services to ensure your message reaches the right audience.',
+        icon: 'tabler:ad',
       },
       {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
+        title: 'Influencer Marketing',
         description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'Leverage the power of influencers to promote your brand. We connect you with influencers who align with your brand and help manage campaigns from start to finish.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Email Marketing',
+        description:
+          'Reach your customers directly with targeted email campaigns. Our email marketing services include strategy, design, and automation to maximize engagement.',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Event Marketing',
+        description:
+          'Create memorable experiences for your audience with our event marketing services. We handle everything from planning to execution to ensure your events are a success.',
+        icon: 'tabler:calendar-event',
       },
     ]}
   />
@@ -93,37 +93,37 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'Creative Excellence',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'Our team of creative professionals delivers innovative and impactful marketing solutions that set your brand apart.',
+        icon: 'tabler:brush',
       },
       {
-        title: 'Customization Tools',
+        title: 'Strategic Approach',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          'We take a strategic approach to marketing, ensuring that every campaign is aligned with your business goals and delivers measurable results.',
+        icon: 'tabler:target',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Comprehensive Services',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
+          'From initial strategy to final execution, we provide a full range of marketing services to support your business at every stage.',
+        icon: 'tabler:package',
       },
       {
-        title: 'Preview and Mockup Views',
+        title: 'Client-Centric Focus',
         description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'We prioritize our clients and work closely with them to understand their needs and deliver customized marketing solutions.',
+        icon: 'tabler:heart-handshake',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: 'https://images.unsplash.com/photo-1535451801241-b5395e1d4a1b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=774&q=80',
+      alt: 'Marketing Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Us</h3>
     </Fragment>
   </Content>
 
@@ -133,92 +133,72 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'Time Efficiency',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
+          'Our streamlined processes and expert team ensure timely delivery of marketing campaigns, allowing you to focus on your core business.',
         icon: 'tabler:clock',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Measurable Results',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
+          'We use data-driven strategies and analytics to track the performance of your campaigns and ensure they deliver measurable results.',
+        icon: 'tabler:chart-pie',
       },
       {
-        title: 'Cost-Efficiency',
+        title: 'Cost-Effective Solutions',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
+          'We offer high-quality marketing services that provide excellent value for your investment, helping you achieve your goals within budget.',
+        icon: 'tabler:currency-dollar',
       },
       {
-        title: 'Instant Download',
+        title: 'Instant Support',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          'Our team is always ready to assist you with any marketing needs, ensuring that your campaigns run smoothly and effectively.',
+        icon: 'tabler:headset',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      src: 'https://images.unsplash.com/photo-1513128034602-7814ccaddd4e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=870&q=80',
+      alt: 'Marketing Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Our Commitment</h3>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="What Our Clients Say"
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `KFM Company has significantly boosted our brand's visibility and engagement through their expert digital marketing strategies. Their creative approach have made a tangible impact on our business.`,
+        name: 'John Doe',
+        job: 'Marketing Director, ABC Corp.',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          src: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'John Doe Image',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `The team at KFM Company has been instrumental in developing our brand strategy and executing successful marketing campaigns. Their expertise and dedication are truly unmatched.`,
+        name: 'Jane Smith',
+        job: 'CEO, XYZ Ltd.',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          src: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Jane Smith Image',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial: `KFM's content creation and social media marketing services have elevated our online presence and driven significant growth. Their creative team consistently delivers exceptional results.`,
+        name: 'Alice Brown',
+        job: 'Social Media Manager, LMN Inc.',
         image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          src: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'Alice Brown Image',
         },
       },
     ]}
-    callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
-      icon: 'tabler:chevron-right',
-    }}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
-      },
-    ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
   />
 </Layout>

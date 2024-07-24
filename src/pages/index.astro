@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 import Features2 from '~/components/widgets/Features2.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -22,31 +23,28 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Startup Web Demo"
+    tagline="Transforming Data into Growth"
     actions={[
       {
         variant: 'primary',
-        target: '_blank',
-        text: 'Get templates',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'Get in Touch',
+        href: getPermalink('/contact'),
+        icon: 'tabler:mail',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Learn more...', href: getPermalink('/about') },
     ]}
   >
     <Fragment slot="title">
-      Improve <span class="hidden sm:inline">the online presence of</span> your <span
-        class="text-accent dark:text-white highlight">Startup</span
-      > with Astrowind templates
+      <span class="text-accent dark:text-white highlight">Innovative</span> Marketing Solutions
     </Fragment>
 
     <Fragment slot="subtitle">
-      Step into the spotlight with <span class="font-semibold">Astrowind</span> templates, your pathway to fortifying your
-      startup's digital footprint, fostering credibility, and expanding your reach.
+      Empowering <span class="font-semibold">GCC businesses</span> with innovative, cutting-edge, AI-powered, marketing solutions
+      that drive growth, enhance brand visibility, and optimize customer engagement.
     </Fragment>
 
     <Fragment slot="image">
-      <YouTube id="gxBkghlglTg" title="Astro just Launched.... Could it be the ultimate web framework?" />
+      <YouTube id="o4EifELHZNg" title="Are you ready to solve your business problems?" />
       <style is:inline>
         lite-youtube {
           margin: 0 auto;
@@ -60,7 +58,7 @@ const metadata = {
 
   <Features2
     title="About us"
-    subtitle="We believe in the magic of turning dreams into stunning realities. Founded by passionate developers with a shared vision, we set out to simplify the website creation process. Our templates bring together the innovation of Astro 4.0 and the versatility of Tailwind CSS, enabling you to express your unique brand identity like never before."
+    subtitle="At KFM Company, we harness the power of advanced data analytics and AI-driven insights to deliver unparalleled marketing strategies that drive growth, optimize customer engagement, and enhance brand visibility. With offices in Bahrain, Riyadh, Doha, and Dubai, our dedicated team of experts is committed to empowering businesses across the GCC region with personalized, data-centric solutions that yield measurable results."
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -70,13 +68,13 @@ const metadata = {
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Discover the impressive impact of Astrowind"
+    title="Discover the impressive impact of KFM Company"
     subtitle="The numbers below reflect the trust our users have placed in us and the remarkable outcomes we've helped them achieve."
     stats={[
-      { title: 'Downloads', amount: '182K' },
-      { title: 'Websites Launched', amount: '87' },
+      { title: 'Post Views', amount: '6.7M' },
+      { title: 'Clients Served', amount: '96' },
+      { title: 'App Downloads', amount: '576K' },
       { title: 'User Ratings', amount: '4.8' },
-      { title: 'Satisfied Clients', amount: '116K' },
     ]}
   />
 
@@ -84,7 +82,7 @@ const metadata = {
 
   <Brands
     title="Partnerships & Collaborations"
-    subtitle="At Astrowind, we believe in the power of collaboration to drive innovation and create exceptional experiences."
+    subtitle="At KFM Company, we believe in the power of collaboration to drive innovation and create exceptional experiences."
     icons={[]}
     images={[
       {
@@ -99,18 +97,9 @@ const metadata = {
         src: 'https://cdn.pixabay.com/photo/2013/10/01/10/29/ebay-189064_1280.png',
         alt: 'Ebay',
       },
-
-      {
-        src: 'https://cdn.pixabay.com/photo/2015/04/13/17/45/icon-720944_1280.png',
-        alt: 'Youtube',
-      },
       {
         src: 'https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png',
         alt: 'Microsoft',
-      },
-      {
-        src: 'https://cdn.pixabay.com/photo/2015/04/23/17/41/node-js-736399_1280.png',
-        alt: 'Node JS',
       },
       {
         src: 'https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_1280.png',
@@ -131,25 +120,25 @@ const metadata = {
 
   <Features2
     title="What services do we provide?"
-    subtitle="We offer a wide range of website templates that suit various industries and purposes such as business, portfolio, e-commerce, blog, etc."
+    subtitle="We offer data-driven marketing services to enhance brand visibility, optimize customer engagement, and drive growth."
     items={[
       {
-        title: 'Installation Instructions',
+        title: 'Data Analytics & Insights',
         description:
-          'Offer clear instructions on how to download the purchased templates and install them on various website platforms or content management systems.',
-        icon: 'flat-color-icons:document',
+          'We analyze customer behavior and market trends to provide actionable insights that inform effective marketing strategies.',
+        icon: 'flat-color-icons:data-sheet',
       },
       {
-        title: 'Demo and Previews',
+        title: 'AI-Powered Campaigns',
         description:
-          'Provide interactive demos and previews that allow customers to see how their chosen template will look and function before making a purchase.',
-        icon: 'flat-color-icons:template',
+          'Utilizing machine learning, we optimize marketing campaigns in real-time to maximize ROI and drive targeted engagement.',
+        icon: 'flat-color-icons:mind-map',
       },
       {
-        title: 'Technical Support',
+        title: 'Personalized Digital Marketing',
         description:
-          'Providing customer support for any technical issues related to the templates or their implementation.',
-        icon: 'flat-color-icons:voice-presentation',
+          'Our tailored SEO, social media, and email marketing solutions ensure your message reaches the right audience at the right time.',
+        icon: 'flat-color-icons:stack-of-photos',
       },
     ]}
   >
@@ -162,42 +151,45 @@ const metadata = {
 
   <Features
     id="features"
-    title="Main features of our templates"
-    subtitle="Possess several key characteristics to effectively cater to the needs of startups and entrepreneurs."
+    title="Main features of our services"
+    subtitle="Our services are designed to leverage advanced technology and personalized strategies to maximize your marketing impact and drive business growth."
     columns={3}
     items={[
       {
-        title: 'Modern and Professional Design',
+        title: 'Advanced Data Analytics',
         description:
-          'Have a contemporary design that reflects current design trends and gives a professional impression.',
-        icon: 'tabler:artboard',
+          'We use sophisticated tools to analyze customer behavior and market trends, providing you with actionable insights to make informed marketing decisions.',
+        icon: 'tabler:brand-databricks',
       },
       {
-        title: 'Responsive and Mobile-Friendly',
-        description: 'Adapt seamlessly to different screen sizes and devices to ensure a consistent experience.',
-        icon: 'tabler:picture-in-picture',
-      },
-      {
-        title: 'Customizability',
+        title: 'AI-Driven Campaign Optimization',
         description:
-          'Easily customizable, allowing users to adapt the design, colors, typography, and content to match their brand identity.',
-        icon: 'tabler:adjustments-horizontal',
+          'Our AI algorithms continuously optimize your marketing campaigns in real-time, ensuring maximum ROI and targeted audience engagement.',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Fast Loading Times',
-        description: 'Optimized for speed to ensure a smooth user experience and favorable search engine rankings.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Personalized Digital Marketing',
         description:
-          'Incorporate SEO best practices in template structure and code to improve visibility in search engine results.',
-        icon: 'tabler:arrows-right-left',
+          'We create tailored SEO, social media, and email marketing strategies that resonate with your audience and drive higher engagement rates.',
+        icon: 'tabler:mail',
       },
       {
-        title: 'Compatibility',
-        description: 'The templates work seamlessly across various content management systems and website builders.',
-        icon: 'tabler:plug-connected',
+        title: 'Comprehensive Market Research',
+        description:
+          'Our thorough market analysis helps identify opportunities and challenges, allowing you to stay ahead of the competition and adapt to changing market dynamics.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Customer Experience Enhancement',
+        description:
+          'We design personalized customer journeys and feedback loops to improve satisfaction and loyalty, creating lasting relationships with your clients.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Content Creation & Strategy',
+        description:
+          'Our team of content experts produces high-quality, engaging content that aligns with your voice and effectively communicates your message to your target audience.',
+        icon: 'tabler:file-text',
       },
     ]}
   />
@@ -208,34 +200,34 @@ const metadata = {
     title="Frequently Asked Questions"
     items={[
       {
-        title: 'What are landing page templates?',
+        title: 'What industries do you specialize in?',
         description:
-          'Landing page templates are pre-designed web page layouts that are specifically created to serve as a foundation for building effective landing pages. These templates are designed to capture the attention of visitors and guide them towards a specific action or goal, such as signing up for a newsletter, making a purchase, or downloading a resource.',
+          "We specialize in a wide range of industries including e-commerce, finance, hospitality, and more, offering tailored marketing solutions to meet each sector's unique needs.",
       },
       {
-        title: 'Why should I use a template?',
+        title: 'How do you ensure the effectiveness of your marketing campaigns?',
         description:
-          'Some of the advantages are that they provide a ready-to-use structure,  saving you significant time. Are designed with user-friendliness in mind and provide a cost-effective alternative, saving you money while still delivering a quality result.',
+          'We leverage advanced data analytics and AI-driven insights to continuously monitor and optimize your campaigns, ensuring they achieve the best possible results.',
       },
       {
-        title: 'Can I preview templates before buying?',
+        title: 'What is your pricing model?',
         description:
-          'Yes, the templates allow you to preview them before making a purchase. There is a "Demo" button associated with each template.',
+          'Our pricing model is flexible, including monthly retainers, project-based fees, and performance-based commissions to suit different business needs and budgets.',
       },
       {
-        title: 'Do I need technical skills to use a template?',
+        title: 'How can you help improve our customer engagement?',
         description:
-          'Advanced technical skills are not required to use a template, but having a basic understanding of web navigation and familiarity with using online tools can still be beneficial. If you have more specific customization needs, you might need to consult guides or reach out to customer support for assistance.',
+          'We use personalized marketing strategies, including tailored content and targeted campaigns, to enhance customer engagement and foster long-term relationships.',
       },
       {
-        title: 'Can I use the template on multiple websites?',
+        title: 'Do you offer content creation services?',
         description:
-          'No, the template comes with a single-use license, meaning you can use the template on one website or project only. Using the template on additional websites would require purchasing additional licenses.',
+          "Yes, our team of content experts can create high-quality, engaging content that aligns with your brand's voice and marketing goals.",
       },
       {
-        title: 'What if I need help with customization?',
+        title: 'How do you stay ahead of market trends?',
         description:
-          "The templates provides a comprehensive step-by-step guide that walk you through the customization process. If you still have doubts, you can reach out to our customer support team. They can answer your questions, provide guidance on customization, and address any issues you're facing.",
+          'We conduct comprehensive market research and continuously analyze industry trends to ensure our strategies are always up-to-date and effective.',
       },
     ]}
   >
@@ -256,8 +248,18 @@ const metadata = {
         icon: 'tabler:phone',
         callToAction: {
           target: '_blank',
-          text: 'Call us',
-          href: '/',
+          text: '+973 0000 0000',
+          href: 'tel:+97300000000',
+          variant: 'link',
+        },
+      },
+      {
+        title: 'Chat',
+        icon: 'tabler:headset',
+        callToAction: {
+          target: '_blank',
+          text: 'WhatsApp Messege',
+          href: 'wa.me/+97300000000',
           variant: 'link',
         },
       },
@@ -266,28 +268,18 @@ const metadata = {
         icon: 'tabler:mail',
         callToAction: {
           target: '_blank',
-          text: 'Write to us',
-          href: '/',
+          text: 'info@kfm.company',
+          href: 'mailto:info@kfm.company',
           variant: 'link',
         },
       },
       {
-        title: 'Chat with sales',
-        icon: 'tabler:message-circle',
+        title: 'Office',
+        icon: 'tabler:map-pin',
         callToAction: {
           target: '_blank',
-          text: 'Start chatting',
-          href: '/',
-          variant: 'link',
-        },
-      },
-      {
-        title: 'Chat with support',
-        icon: 'tabler:message-circle',
-        callToAction: {
-          target: '_blank',
-          text: 'Start chatting',
-          href: '/',
+          text: 'Manama, Bahrain',
+          href: 'https://www.openstreetmap.org/way/199998746',
           variant: 'link',
         },
       },
@@ -300,18 +292,17 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        target: '_blank',
-        text: 'Get templates',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'Get App',
+        href: getPermalink('/app'),
+        icon: 'tabler:apps',
       },
     ]}
   >
-    <Fragment slot="title">Be a part of our vision</Fragment>
+    <Fragment slot="title">Explore Our Mobile App</Fragment>
 
     <Fragment slot="subtitle">
-      Discover a dynamic work environment, unparalleled growth opportunities, and the chance to make a meaningful
-      impact.
+      We provide you with a cutting-edge mobile app that helps you to reach your goals. It's currently available for iOS
+      and Android devices.
     </Fragment>
   </CallToAction>
 </Layout>

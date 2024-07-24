@@ -5,7 +5,6 @@ import Prices from '~/components/widgets/Pricing.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Pricing',
@@ -17,93 +16,93 @@ const metadata = {
 
   <HeroText
     tagline="Our Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Flexible Pricing for Every Need"
+    subtitle="Find the perfect plan that suits your marketing objectives and budget."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="Our Pricing Plans"
+    subtitle="Choose a plan that fits your business requirements"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
+        title: 'Starter',
+        subtitle: 'Ideal for small businesses and startups',
+        price: 49,
         period: 'per month',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Basic digital marketing strategy',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Social media management (1 platform)',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Monthly customer performance reports',
           },
           {
-            description: 'In hac habitasse',
+            description: 'Email marketing for up to 1k subscribers',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
+          text: 'Get Started',
           href: '#',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: 'Professional',
+        subtitle: 'Best for growing businesses and teams',
+        price: 99,
+        period: 'per month',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Comprehensive marketing strategy',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'Social media management (5 platforms)',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: 'Weekly customer performance reports',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
+            description: 'Email marketing for up to 8k subscribers',
           },
           {
-            description: 'Donec fringilla sem',
+            description: 'Content creation and management',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
+          text: 'Get Started',
           href: '#',
         },
         hasRibbon: true,
-        ribbonTitle: 'popular',
+        ribbonTitle: 'Most Popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'Enterprise',
+        subtitle: 'Perfect for large organizations',
+        price: 249,
+        period: 'per month',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'Custom marketing strategy and consulting',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Social media management (20 platforms)',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Real-time customer performance reports',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'Email marketing for unlimited subscribers',
+          },
+          {
+            description: 'Advanced content creation services',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
+          text: 'Get Started',
           href: '#',
         },
       },
@@ -113,38 +112,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="Benefits of Our Packages"
+    subtitle="Explore the features and advantages of all plans"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'Scalable Options',
+        description:
+          'Our pricing plans are designed to grow with your business, offering flexibility as your needs evolve.',
+        icon: 'tabler:scale',
       },
       {
         title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        description: 'No hidden costs or extra charges. What you see is what you get.',
+        icon: 'tabler:clipboard-check',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
+        title: 'Secure Transactions',
+        description: 'We use secure payment methods to protect your financial information.',
+        icon: 'tabler:lock',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
+        title: 'Immediate Access',
+        description: 'Get instant access to all features and services upon subscription.',
+        icon: 'tabler:door-enter',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
+        title: 'Customizable Plans',
+        description: 'Upgrade or adjust your plan to fit your specific needs and goals.',
+        icon: 'tabler:adjustments',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        title: 'Dedicated Support',
+        description: 'Our team is here to help with any questions or issues, ensuring a smooth experience.',
         icon: 'tabler:headset',
       },
     ]}
@@ -154,42 +154,42 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="How to Get Started"
+    tagline="Simple steps to choose the right plan"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Review Plans',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Select Your Plan',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Sign Up or Log In',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Confirm the Selection',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'Enter Payment Details',
         icon: 'tabler:number-5',
       },
       {
-        title: 'Confirmation',
+        title: 'Receive Confirmation',
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'Start Your Journey',
         icon: 'tabler:number-7',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1676276375809-da1416754e97?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=987&q=80',
+      alt: 'Steps Image',
     }}
   />
 
@@ -197,47 +197,31 @@ const metadata = {
 
   <FAQs
     title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    subtitle="Find answers to your questions about our pricing and plans"
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: 'Does each plan include customer support?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
+          'Yes, all our plans include access to customer support to help with any issues or questions you may have.',
       },
       {
-        title: 'Is there a trial period for the different plans?',
+        title: 'Is there a free trial available?',
         description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
+          'We do not offer free trials, but we provide detailed information about each plan to help you make an informed decision.',
       },
       {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+        title: 'Can I change my plan later?',
+        description: 'Yes, you can upgrade or downgrade your plan at any time to better meet your needs.',
       },
       {
-        title: 'What payment methods do you accept?',
-        description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+        title: 'What payment methods are accepted?',
+        description: 'We accept major credit cards and online payment options for your convenience and security.',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
+        title: 'Are there any additional fees?',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
-      },
-    ]}
-  />
-
-  <!-- CallToAction Widget *********** -->
-
-  <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+          'No, there are no hidden fees. The price listed for each plan covers all included features and services.',
       },
     ]}
   />

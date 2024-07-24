@@ -17,19 +17,16 @@ const metadata = {
   <Hero
     tagline="About Us"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: 'https://cdn.pixabay.com/photo/2023/10/10/05/52/website-8305450_1280.jpg',
+      alt: 'KFM Company',
     }}
   >
-    <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
-    </Fragment>
+    <Fragment slot="title"> KFM Company </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      At KFM Company, we leverage data-driven strategies to transform your marketing efforts. With offices in Bahrain,
+      Riyadh, Doha, and Dubai, we provide innovative solutions to help you connect with your audience and achieve
+      measurable results.
     </Fragment>
   </Hero>
 
@@ -38,111 +35,88 @@ const metadata = {
   <Stats
     title="Statistics about us"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Offices', amount: '5' },
+      { title: 'Clients', amount: '150+' },
+      { title: 'Campaigns', amount: '500+' },
+      { title: 'Awards', amount: '20' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Our services"
+    subtitle="KFM Company offers a range of marketing solutions designed to help businesses thrive in a competitive digital landscape."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Data Analytics',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'We use advanced data analytics to understand customer behavior and market trends, providing actionable insights.',
+        icon: 'tabler:chart-line',
       },
       {
-        title: 'Interior Design',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+        title: 'Content Creation',
+        description: 'Our team creates compelling content that engages your audience and drives brand awareness.',
+        icon: 'tabler:file-text',
       },
       {
-        title: 'Photography',
+        title: 'SEO Optimization',
+        description: 'Optimize your website to rank higher in search engine results and attract more organic traffic.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Social Media Management',
+        description: 'Manage and grow your social media presence with targeted strategies and engaging content.',
+        icon: 'tabler:brand-twitter',
+      },
+      {
+        title: 'Email Marketing',
+        description: 'Reach your audience with personalized email campaigns that convert leads into customers.',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Paid Advertising',
+        description: 'Maximize your ROI with targeted PPC campaigns on Google, Facebook, and other platforms.',
+        icon: 'tabler:ad',
+      },
+      {
+        title: 'Brand Strategy',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Develop a strong brand identity that resonates with your target audience and differentiates you from competitors.',
+        icon: 'tabler:image-in-picture',
+      },
+      {
+        title: 'Web Development',
+        description: 'Create a stunning website that reflects your brand and provides a seamless user experience.',
+        icon: 'tabler:device-desktop',
+      },
+      {
+        title: 'Market Research',
+        description: 'Gain insights into your market and competitors to inform your business strategy.',
+        icon: 'tabler:chart-pie',
       },
     ]}
-  />
-
-  <!-- Features3 Widget ************** -->
-
-  <Features3
-    columns={3}
-    isAfterContent={true}
-    items={[
-      {
-        title: 'E-commerce',
-        description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Blog',
-        description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Business',
-        description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Medical',
-        description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
-    }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
     title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    subtitle="Our core values drive our approach and ensure we deliver exceptional results for our clients."
     items={[
       {
         title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+        description: 'We prioritize our clients’ needs and tailor our strategies to meet their specific goals.',
       },
       {
         title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+        description: 'We continuously refine our techniques and embrace new technologies to stay ahead.',
       },
       {
         title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+        description: 'We conduct business with integrity, ensuring transparency and trust in all our interactions.',
       },
     ]}
   />
@@ -151,28 +125,23 @@ const metadata = {
 
   <Steps2
     title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    subtitle="Our accomplishments reflect our dedication to excellence and innovation in marketing."
     isReversed={true}
-    callToAction={{
-      text: 'See more',
-      href: '/',
-    }}
     items={[
       {
         title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
+        description: 'We serve clients across the GCC and beyond, helping them expand their market presence.',
         icon: 'tabler:globe',
       },
       {
         title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
+        description: 'Our clients consistently praise our results and the quality of our services.',
         icon: 'tabler:message-star',
       },
       {
         title: 'Awards and recognition as industry experts',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+          'We have received numerous awards for our innovative marketing strategies and successful campaigns.',
         icon: 'tabler:award',
       },
     ]}
@@ -186,42 +155,20 @@ const metadata = {
     columns={4}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'Manama',
+        description: '2476 Manama, Bahrain',
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'Riyadh',
+        description: '5678 Riyadh, Saudi Arabia',
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
+        title: 'Doha',
+        description: '4678 Doha, Qatar',
       },
       {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
-    columns={2}
-    items={[
-      {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
-      },
-      {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+        title: 'Dubai',
+        description: '9012 Dubai, UAE',
       },
     ]}
   />
